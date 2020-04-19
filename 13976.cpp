@@ -18,6 +18,7 @@ int main()
 	for(ll i=3; i<=n; i++)
 	{
 		cur=((p+MOD)*4-pp+MOD)%MOD;
+		printf("%lld\n",cur);
 		//printf("%lld %lld %lld\n",pp,p,cur);
 		pp=p,p=cur;
 	}

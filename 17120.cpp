@@ -8,8 +8,30 @@
 
 using namespace std;
 
-vector<string> el;
+vector<string> el,fullb;
 
+
+void e(string s)
+{
+	fullb.push_back(s);
+}
+void fullsetup()
+{
+	e("`:cat:`");
+	e("c:c:cat:at:c");
+	e(":c:cat:");
+	e("` ` :cat: ` ` `");
+}
+int fulls(string s)
+{
+	int cmp=0;
+	for(int i=0; i<fullb.size(); i++)
+		if(fullb[i]==s)
+		{
+			return cmp=1;
+		}
+	return cmp;
+}
 void ea(string s)
 {
 	el.push_back(s);
@@ -45,12 +67,17 @@ int chk(string s)
 
 int main()
 {
+	int qpq,qpq2;
+	scanf("%c%c",&qpq,&qpq2);
+	printf("%d %d",qpq,qpq2);
 	emoji_setup();
-	string str;
+	//fullsetup();
+	string str,cmpa;
 	int hasEmoji = 0,finding = 0;
 	char a;
 	while((a = getchar()) != -1)
 	{
+		if(a!='\n') cmpa += a;
 		if(finding && a != '\n' && !hasEmoji)
 		{
 			if(a <= 'Z' && a >= 'A')
@@ -61,7 +88,8 @@ int main()
 		if(a == ':') str=':',finding=1;
 		else if(a == '\n')
 		{
-			if(hasEmoji) puts("YES");
+			if(fulls(cmpa)) puts("NO");
+			else if(hasEmoji) puts("YES");
 			else puts("NO");
 			str="", finding = 0, hasEmoji = 0;
 		}
