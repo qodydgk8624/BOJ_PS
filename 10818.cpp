@@ -1,4 +1,4 @@
-// BOJ - 10818 ÃÖ¼Ò, ÃÖ´ë
+// BOJ - 10818 ìµœì†Œ, ìµœëŒ€
 
 #include <iostream>
 #include <algorithm>

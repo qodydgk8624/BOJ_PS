@@ -1,4 +1,4 @@
-// BOJ - 2446 º°Âï±â - 9
+// BOJ - 2446 ë³„ ì°ê¸° - 9
 
 #include <iostream>
 

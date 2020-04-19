@@ -1,4 +1,4 @@
-// BOJ - 5543 »ó±Ù³¯µå
+// BOJ - 5543 ìƒê·¼ë‚ ë“œ
 
 #include <iostream>
 #include <algorithm>

@@ -1,4 +1,4 @@
-// BOJ - 2588 °ö¼À 
+// BOJ - 2588 ê³±ì…ˆ
 
 #include <iostream>
 #define ll long long int
