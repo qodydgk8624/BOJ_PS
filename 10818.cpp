@@ -14,6 +14,8 @@ int main()
 		cin >> d[i];
 		
 	sort(d, d + n);
+
+
 	
 	cout << d[0] << " " << d[n - 1];
 }
