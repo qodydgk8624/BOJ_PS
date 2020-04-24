@@ -1,4 +1,4 @@
 # BOJ_PS
 Problem Solving
-그냥.. 문제를 미친듯이 풀어볼려고..
-## 용하
+[백준](http://icpc.me) 에서 풀어본 문제들의 repository
+
